@@ -1,0 +1,51 @@
+{
+  "name": "chat-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@pubnub/react-chat-components": "^0.22.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/emoji-mart": "^3.0.9",
+    "emoji-mart": "^5.5.2",
+    "firebase": "^9.19.1",
+    "firebase-tools": "^11.25.2",
+    "install": "^0.13.0",
+    "pubnub": "^7.2.2",
+    "pubnub-react": "^3.0.2",
+    "react": "^18.2.0",
+    "react-app": "^1.1.2",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "styled-components": "^5.3.9",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "yarn firebase deploy --only hosting",
+    "deploy:client": "yarn firebase deploy --only hosting:chat-demo-7bf35",
+    "deploy:dashboard": "yarn firebase deploy --only hosting:chatdashboard",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
